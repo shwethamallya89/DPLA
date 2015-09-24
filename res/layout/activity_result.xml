@@ -1,0 +1,151 @@
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="com.project.android.dpla.mama_dpla.ResultActivity"
+    tools:ignore="MergeRootFrame" /> -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.project.android.dpla.mama_dpla.ResultActivity"
+    android:id="@+id/result">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/link"
+        android:autoLink="web"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/collection"
+        android:layout_below="@+id/resultPage"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL:"
+        android:textStyle="bold"
+        android:id="@+id/url"
+        android:layout_below="@+id/resultPage"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collection:"
+        android:textStyle="bold"
+        android:id="@+id/collection"
+        android:layout_below="@+id/link"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tags:"
+        android:textStyle="bold"
+        android:id="@+id/Tags"
+        android:layout_below="@+id/Type"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type: "
+        android:textStyle="bold"
+        android:id="@+id/Type"
+        android:layout_below="@+id/collectionTitle"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterTag"
+        android:hint="Enter Tags Here"
+        android:inputType="text"
+        android:digits=" 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+        android:layout_below="@+id/Tags"
+        android:layout_marginTop="36dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:onClick="addTag"
+        android:id="@+id/tagButton"
+        android:layout_alignBottom="@+id/enterTag"
+        android:layout_toRightOf="@+id/enterTag"
+        android:layout_toEndOf="@+id/enterTag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/collectionTitle"
+        android:layout_alignTop="@+id/collection"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/collection"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TypeView"
+        android:layout_above="@+id/Tags"
+        android:layout_toRightOf="@+id/collection"
+        android:layout_below="@+id/collectionTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/Type"
+        />
+
+    <!-- <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:text="\@id"
+         android:id="@+id/idView"
+         android:layout_below="@+id/enterTag"
+         android:layout_toRightOf="@+id/collection"
+         android:layout_toEndOf="@+id/collection"
+         android:layout_marginTop="62dp" /> -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tagView"
+        android:layout_toEndOf="@+id/collection"
+        android:layout_above="@+id/enterTag"
+        android:layout_toRightOf="@+id/collection"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Tags"
+        />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultPage"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColorHighlight="@color/abc_primary_text_material_dark" />
+
+    <!-- <WebView
+         android:id="@+id/webview"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"/> -->
+
+
+</RelativeLayout>
+

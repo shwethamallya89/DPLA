@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tag DPLA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="edit_message">Enter keywords</string>
+    <string name="button_send">Send</string>
+    <string name="action_settings">Settings</string>
+    <string name="question_text">Constantinople?</string>
+    <string name="true_button">true</string>
+    <string name="false_button">false</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+    <string name="button_clear">Clear</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_start_act">Search DPLA</string>
+    <string name="title_activity_result">Result</string>
+
+
+</resources>
